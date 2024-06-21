@@ -17,21 +17,21 @@ import theme7 from '../assets/images/theme7.webp'
 import fixitIcon from '../assets/icons/fixit.svg'
 
 const defaultSettings = {
-  title: 'A begineers guide to frontend development',
-  bgColor: '#949ee5',
-  pattern: '',
-  author: process.env.REACT_APP_AUTHOR || 'Lruihao',
+  title: '秋风于渭水',
+  bgColor: '#5bc0eb',
+  pattern: 'none',
+  author: process.env.REACT_APP_AUTHOR || '去年夏天',
   icon: { label: 'reactjs', value: 'react', opts: ['original', 'original-wordmark'] },
   iconStyle: 'original',
   iconStyleOptions: ['original', 'original-wordmark'],
   devIconOptions: [],
-  font: 'font-Virgil',
-  theme: 'background',
+  font: 'font-Anek',
+  theme: 'stylish',
   customIcon: '',
-  platform: 'hashnode',
-  customPlatformWidth: 1024,
-  customPlatformX: 0,
-  customPlatformY: 0,
+  platform: 'dev',
+  customPlatformWidth: 1200,
+  customPlatformX: 1200,
+  customPlatformY: 630,
 }
 
 const fontOptions = [
