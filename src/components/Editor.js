@@ -39,8 +39,8 @@ const fontOptions = [
   'font-MMT',
   'font-Anek',
   'font-Inter',
-  'font-mono',
   'font-Poppins',
+  'font-mono',
   'font-sans',
   'font-serif',
 ]
@@ -164,13 +164,14 @@ class Editor extends React.Component {
   _getFontStyle = () => {
     let fontStyle = ''
     switch (this.state.font) {
+      // old-font https://excalidraw.nyc3.cdn.digitaloceanspaces.com/fonts/Virgil.woff2
       case 'font-Virgil':
         fontStyle =
         `
           @font-face {
             font-family: 'Virgil';
             font-display: swap;
-            src: url(https://virgil.excalidraw.com/Virgil.woff2) format('woff2');
+            src: url(https://excalidraw.nyc3.cdn.digitaloceanspaces.com/fonts/Excalifont-Regular.woff2) format('woff2');
           }
         `
         break
@@ -291,7 +292,7 @@ class Editor extends React.Component {
                           >
                             {
                               fontOptions.map((font) => (
-                                <option key={font} value={font}>{font}</option>
+                                <option key={font} value={font}>{this.props.t('editor.fonts.' + font)}</option>
                               ))
                             }
                           </select>
